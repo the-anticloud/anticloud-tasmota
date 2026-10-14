@@ -1,0 +1,10 @@
+{
+  "project": "TASMOTA",
+  "category": "CONSUMER_APPLIANCES",
+  "path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\CONSUMER_APPLIANCES\\TASMOTA",
+  "status": "failed",
+  "reason": "unreadable BENCH.json: 'metrics'",
+  "files_count": null,
+  "lines_of_code": null,
+  "sha": null
+}
