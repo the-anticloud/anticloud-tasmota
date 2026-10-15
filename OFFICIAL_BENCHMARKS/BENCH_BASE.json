@@ -1,0 +1,410 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "TASMOTA",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\CONSUMER_APPLIANCES\\TASMOTA\\UPSTREAM_CLONE",
+    "git": {
+      "head": "e63b9383da2e015dbda9f81bf9ee373b8dcb5cf1",
+      "url": "https://github.com/tasmota/Tasmota",
+      "branch": "firmware",
+      "committed_at": "2021-08-07T19:08:15+02:00"
+    }
+  },
+  "metrics": {
+    "files_total": 464,
+    "source_files_scanned": 9,
+    "lines_of_code": 1046,
+    "languages": {
+      ".bin": 162,
+      ".map": 137,
+      ".json": 76,
+      ".gz": 69,
+      ".ts": 7,
+      ".bat": 4,
+      ".txt": 2,
+      "(none)": 2,
+      ".ico": 1,
+      ".html": 1,
+      ".md": 1,
+      ".js": 1,
+      ".py": 1
+    }
+  },
+  "licence": {
+    "spdx": "NOASSERTION",
+    "class": "C",
+    "source_file": null,
+    "redistribution_allowed": false
+  },
+  "dependencies": {
+    "count": 14,
+    "unique": 14,
+    "by_ecosystem": {
+      "npm": 14
+    },
+    "list": [
+      {
+        "ecosystem": "npm",
+        "name": "@material/mwc-base",
+        "version": "^0.21.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@material/mwc-linear-progress",
+        "version": "^0.21.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "esp-web-flasher",
+        "version": "^3.1.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "lit",
+        "version": "^2.0.0-rc.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tslib",
+        "version": "^2.2.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@rollup/plugin-json",
+        "version": "^4.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@rollup/plugin-node-resolve",
+        "version": "^13.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@rollup/plugin-typescript",
+        "version": "^8.2.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/w3c-web-serial",
+        "version": "^1.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prettier",
+        "version": "^2.3.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "rollup",
+        "version": "^2.50.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "rollup-plugin-terser",
+        "version": "^7.0.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "serve",
+        "version": "^12.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "^4.3.2",
+        "source_file": "package.json",
+        "raw": ""
+      }
+    ]
+  },
+  "owasp_top10": {
+    "total_findings": 3,
+    "files_with_findings": 2,
+    "severity": {
+      "high": 1,
+      "medium": 1,
+      "low": 1
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "script/stubgen.py",
+            "line": 147,
+            "cwe": "CWE-95",
+            "snippet": "code = eval(zlib.decompress(base64.b64decode(stub)))"
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "script/stubgen.py",
+            "line": 65,
+            "cwe": "CWE-",
+            "snippet": "qM+UDQ2cXYLk2eb8Qx6jettteajsEHrfu/tEHZWye1/zOfuVvJeLhg75ChcsdKvhAsT0pV8/ekgnVzglVUxW3VCWiOpG/hnttjDP7/l0yrnIE/qWbArJpPgN24sxXxODW9UlOUGLRUEuAbx7bFjm9XdSbYS3Tdxi\\"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 0,
+        "findings": []
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "src/flash.ts",
+            "line": 114,
+            "cwe": "CWE-918",
+            "snippet": "const resp = await fetch(url);"
+          }
+        ]
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 0,
+    "files_with_findings": 0,
+    "severity": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:ccc7da10-c2be-5e27-826e-949a86a6fca4",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-05T15:33:25Z",
+      "component": {
+        "type": "application",
+        "name": "TASMOTA",
+        "version": "e63b9383da2e",
+        "bom-ref": "pkg:generic/anticloud/TASMOTA@e63b9383da2e",
+        "purl": "pkg:generic/anticloud/TASMOTA@e63b9383da2e",
+        "licenses": [
+          {
+            "license": {
+              "id": "NOASSERTION"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": "e63b9383da2e015dbda9f81bf9ee373b8dcb5cf1"
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/tasmota/Tasmota"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "@material/mwc-base",
+        "version": "^0.21.0",
+        "purl": "pkg:npm/@material/mwc-base@^0.21.0",
+        "bom-ref": "npm/@material/mwc-base@^0.21.0"
+      },
+      {
+        "type": "library",
+        "name": "@material/mwc-linear-progress",
+        "version": "^0.21.0",
+        "purl": "pkg:npm/@material/mwc-linear-progress@^0.21.0",
+        "bom-ref": "npm/@material/mwc-linear-progress@^0.21.0"
+      },
+      {
+        "type": "library",
+        "name": "esp-web-flasher",
+        "version": "^3.1.3",
+        "purl": "pkg:npm/esp-web-flasher@^3.1.3",
+        "bom-ref": "npm/esp-web-flasher@^3.1.3"
+      },
+      {
+        "type": "library",
+        "name": "lit",
+        "version": "^2.0.0-rc.2",
+        "purl": "pkg:npm/lit@^2.0.0-rc.2",
+        "bom-ref": "npm/lit@^2.0.0-rc.2"
+      },
+      {
+        "type": "library",
+        "name": "tslib",
+        "version": "^2.2.0",
+        "purl": "pkg:npm/tslib@^2.2.0",
+        "bom-ref": "npm/tslib@^2.2.0"
+      },
+      {
+        "type": "library",
+        "name": "@rollup/plugin-json",
+        "version": "^4.1.0",
+        "purl": "pkg:npm/@rollup/plugin-json@^4.1.0",
+        "bom-ref": "npm/@rollup/plugin-json@^4.1.0"
+      },
+      {
+        "type": "library",
+        "name": "@rollup/plugin-node-resolve",
+        "version": "^13.0.0",
+        "purl": "pkg:npm/@rollup/plugin-node-resolve@^13.0.0",
+        "bom-ref": "npm/@rollup/plugin-node-resolve@^13.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@rollup/plugin-typescript",
+        "version": "^8.2.1",
+        "purl": "pkg:npm/@rollup/plugin-typescript@^8.2.1",
+        "bom-ref": "npm/@rollup/plugin-typescript@^8.2.1"
+      },
+      {
+        "type": "library",
+        "name": "@types/w3c-web-serial",
+        "version": "^1.0.1",
+        "purl": "pkg:npm/@types/w3c-web-serial@^1.0.1",
+        "bom-ref": "npm/@types/w3c-web-serial@^1.0.1"
+      },
+      {
+        "type": "library",
+        "name": "prettier",
+        "version": "^2.3.0",
+        "purl": "pkg:npm/prettier@^2.3.0",
+        "bom-ref": "npm/prettier@^2.3.0"
+      },
+      {
+        "type": "library",
+        "name": "rollup",
+        "version": "^2.50.2",
+        "purl": "pkg:npm/rollup@^2.50.2",
+        "bom-ref": "npm/rollup@^2.50.2"
+      },
+      {
+        "type": "library",
+        "name": "rollup-plugin-terser",
+        "version": "^7.0.2",
+        "purl": "pkg:npm/rollup-plugin-terser@^7.0.2",
+        "bom-ref": "npm/rollup-plugin-terser@^7.0.2"
+      },
+      {
+        "type": "library",
+        "name": "serve",
+        "version": "^12.0.0",
+        "purl": "pkg:npm/serve@^12.0.0",
+        "bom-ref": "npm/serve@^12.0.0"
+      },
+      {
+        "type": "library",
+        "name": "typescript",
+        "version": "^4.3.2",
+        "purl": "pkg:npm/typescript@^4.3.2",
+        "bom-ref": "npm/typescript@^4.3.2"
+      }
+    ]
+  },
+  "elapsed_seconds": 148.32
+}
