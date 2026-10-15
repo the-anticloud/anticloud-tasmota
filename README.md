@@ -1,14 +1,12 @@
 # TASMOTA
 
-> TasmoCompiler is a simple web GUI which allows you to compile fantastic [Tasmota](https://github.com/arendst/Sonoff-Tasmota) firmware with your own settings:
+> Alternative firmware for [ESP8266](https://en.wikipedia.org/wiki/ESP8266) and [ESP32](https://en.wikipedia.org/wiki/ESP32) based devices with **easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX**. _Written for PlatformIO._
 
-**Category:** CONSUMER_APPLIANCES · **Ecosystem:** python · **Vendored upstream:** https://github.com/benzino77/tasmocompiler · **Pinned commit:** `167d59f8e610c54f74426927ee9a5776b2482f2a` · **Vendor:** Anticloud FZ LLE
-
-> **Note:** this package vendors `https://github.com/benzino77/tasmocompiler` as the implementation for the `TASMOTA` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
+**Category:** CONSUMER_APPLIANCES · **Ecosystem:** python · **Vendored upstream:** https://github.com/arendst/Tasmota · **Pinned commit:** `3da77ba044456413d1f789b862454850d0cdd52f` · **Vendor:** Anticloud FZ LLE
 
 ## What This Project Is
 
-TasmoCompiler is a simple web GUI which allows you to compile fantastic [Tasmota](https://github.com/arendst/Sonoff-Tasmota) firmware with your own settings:
+Alternative firmware for [ESP8266](https://en.wikipedia.org/wiki/ESP8266) and [ESP32](https://en.wikipedia.org/wiki/ESP32) based devices with **easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX**. _Written for PlatformIO._
 
 This is the upstream project, vendored at the pinned commit above and packaged offline-first. The 12 improvements Anticloud adds live in `anticloud/` and are described under *Anticloud Overlay* below. Every fact in this file traces to a file in this directory.
 
@@ -63,7 +61,7 @@ The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The 
 SHA3-256 of `BENCH.json`:
 
 ```
-675d524b0b91f9e21bbebcd1c52b2ddc250ae2dabc2bbe47069e025ed870cabf
+1583ed1ee3407663a605cadb8c6b9b71b13840155d8590dcae4e1ed405346042
 ```
 
 Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.

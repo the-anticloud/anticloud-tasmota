@@ -540,9 +540,10 @@
  "version": "1.0.0",
  "source": {
   "git": {
-   "head": "167d59f8e610c54f74426927ee9a5776b2482f2a",
-   "url": "https://github.com/benzino77/tasmocompiler",
-   "sha_verified_from": "agent_alternatives2.json/alternative_found | unified 2026-10-14 (API-exists + content/clone anchor)"
+   "url": "https://github.com/arendst/Tasmota",
+   "head": "3da77ba044456413d1f789b862454850d0cdd52f",
+   "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
+   "previous_substitute": "https://github.com/benzino77/tasmocompiler"
   }
  }
 }
